@@ -32,6 +32,8 @@ value, err := capsule.Open(ctx, "promo-code")
 - Time-locked features and promotional codes
 - Secure value storage with temporal constraints
 
+📖 **[Documentation](https://docs.kolosys.com/timecapsule)** | 🐛 **[Issues](https://github.com/kolosys/timecapsule/issues)**
+
 ### [Ion](https://github.com/kolosys/ion)
 
 Robust concurrency and scheduling primitives for Go applications.
@@ -54,6 +56,8 @@ limiter := ratelimit.NewTokenBucket(ratelimit.PerSecond(100), 20)
 - **Rate Limiters** - Token bucket and leaky bucket implementations
 - **Future**: Circuit breakers, pipelines, and task scheduling
 
+📖 **[Documentation](https://docs.kolosys.com/ion)** | 🐛 **[Issues](https://github.com/kolosys/ion/issues)**
+
 ## 🌟 Design Principles
 
 All Kolosys projects follow these core principles:
@@ -64,14 +68,31 @@ All Kolosys projects follow these core principles:
 - **Thread-Safe**: All public APIs safe for concurrent use
 - **Pluggable Observability**: Optional logging, metrics, and tracing
 
+## 📚 Documentation & Resources
+
+### 🎯 Centralized Documentation
+
+All our projects now feature comprehensive documentation hosted on **GitBook**:
+
+- **📖 [TimeCapsule Docs](https://docs.kolosys.com/timecapsule)** - Complete API reference, examples, and guides
+- **📖 [Ion Docs](https://docs.kolosys.com/ion)** - Detailed documentation for all concurrency primitives
+- **🏠 [Main Site](https://docs.kolosys.com)** - Organization overview and project navigation
+
+### 🔧 Development Resources
+
+- **API Reference**: Auto-generated from Go code with examples
+- **Getting Started**: Step-by-step guides for each library
+- **Examples**: Real-world usage patterns and best practices
+- **Benchmarks**: Performance comparisons and optimization targets
+
 ## 🤝 Contributing
 
 We welcome contributions from the community! Here's how to get involved:
 
-1. **Check out our projects** - Browse our repositories and documentation
-2. **Start with issues** - Look for "good first issue" labels
-3. **Follow our guidelines** - Each repo has detailed CONTRIBUTING.md files
-4. **Join discussions** - Use GitHub Discussions for questions and ideas
+1. **📖 Read the docs** - Start with our comprehensive documentation
+2. **🐛 Find issues** - Look for "good first issue" labels in repositories
+3. **📋 Follow guidelines** - Each repo has detailed CONTRIBUTING.md files
+4. **💬 Join discussions** - Use GitHub Discussions for questions and ideas
 
 ### Quick Start for Contributors
 
@@ -86,20 +107,27 @@ go test -v ./...
 # Check formatting and linting
 go fmt ./...
 go vet ./...
+
+# Generate documentation (if applicable)
+go run .actions/shared/scripts/generate-docs.go
 ```
 
-## 📚 Resources
+## 🚀 CI/CD & Automation
 
-- **Documentation**: Each project has comprehensive docs and examples
-- **API Reference**: Browse code documentation in each repository
-- **Examples**: Real-world usage examples in each repository
-- **Benchmarks**: Performance comparisons and optimization targets
+Our projects feature modern CI/CD pipelines with:
 
-## 🔗 Links
+- **🔄 Automated Testing** - Comprehensive test suites on every PR
+- **📚 Auto-Generated Docs** - Documentation updated automatically from code
+- **🏷️ Semantic Releases** - Automated versioning and changelog generation
+- **🔍 Code Quality** - Linting, formatting, and security scanning
+- **📦 Multi-Platform Builds** - Support for Linux, macOS, and Windows
 
+## 🔗 Quick Links
+
+- 🏠 **[Main Site](https://docs.kolosys.com)** - Organization overview
+- 📖 **[Documentation](https://docs.kolosys.com)** - All project docs
 - 🐛 **Issues**: Found a bug? Open an issue in the relevant repository
 - 💡 **Feature Requests**: Use GitHub Discussions to propose new features
-- 📖 **Documentation**: Visit individual project READMEs for detailed guides
 - 🏷️ **Releases**: Check release notes for latest updates and breaking changes
 
 ---
